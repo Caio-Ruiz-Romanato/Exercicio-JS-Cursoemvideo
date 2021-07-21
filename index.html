@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configuração de caractere -->
+    <meta charset="UTF-8" />
+    <!-- Configuração de porta e compatibilidade com navegador Microsoft -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <!-- Titulo da pagina -->
+    <title>Qual sua idade</title>
+  </head>
+  <!-- Corpo da pagina -->
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+    <!-- Sessão de botões e validação do sexo -->
+    <section>
+      <div>
+        <p>
+          Ano de nascimento:
+          <input
+            class="areatxt"
+            type="number"
+            name="txtano"
+            id="txtano"
+            min="0"
+          />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" name="radsex" id="masc" checked />
+          <label for="masc">Masculino</label>
+          <input type="radio" name="radsex" id="fem" checked />
+          <label for="fem">Feminino</label>
+        </p>
+        <p>
+          <input
+            class="Button"
+            type="button"
+            value="Verificar"
+            onclick="validar()"
+          />
+        </p>
+      </div>
+      <div id="result">Preencha os dados acima</div>
+    </section>
+    <!-- Rodapé -->
+    <footer>&copy;PIXUWEB</footer>
+    <!-- JavaScript -->
+    <script src="mod.js"></script>
+  </body>
+</html>
